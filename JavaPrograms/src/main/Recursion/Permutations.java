@@ -24,7 +24,7 @@ public class Permutations {
     }
 
     public static void main(String[] args) {
-        String str = "XYZ";
+        String str = "ABC";
         printPermutations(str, "");
     }
 }

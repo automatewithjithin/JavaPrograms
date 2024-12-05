@@ -6,6 +6,7 @@ import java.util.OptionalInt;
 public class MinMaxValue {
     public static void main(String []args){
         //WAP to find minimum and maximum value in an array
+        findMaxMinByOrdering(new int[]{10,45,1,2,3,4,5,0});
         findMinMax(new int[]{1,2,3,4,53,7,8});
         findMaxMinUsingStreams(new int[]{1,2,3,4,53,7,8});
     }
@@ -27,6 +28,14 @@ public class MinMaxValue {
         OptionalInt minimum= Arrays.stream(numbers).min();
         OptionalInt maximum=Arrays.stream(numbers).max();
         System.out.println("The minimum value is "+minimum.getAsInt()+" and maximum value is "+maximum.getAsInt());
+    }
+    public static void findMaxMinByOrdering(int []numbers){
+        Arrays.sort(numbers);
+        System.out.println("The minimum value is "+numbers[0]+
+        " and the Maximum value is "+numbers[numbers.length-1]);
+
+                ;
+
     }
 
 
