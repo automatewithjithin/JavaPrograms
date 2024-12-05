@@ -25,8 +25,9 @@ public class UniqueElements {
         for (int i = 0; i < input.length(); i++) {
             for (int j = i + 1; j < input.length(); j++) {
                 if (inputArray[i] == inputArray[j]) {
-                    flag = false;
-                    inputArray[j] = '\0';
+                    flag = false; //duplicate found at jth position.
+                    inputArray[j] = '\0'; /*making the value of duplicate element position (j) null so that
+                    i loop will not take the letter anymore.*/
                 }
             }
             if (flag) {
