@@ -6,7 +6,7 @@ public class UniqueElements {
     public static void main(String[] args) {
         /*WAP to fetch unique elements in string (Non repeating characters)
             1. Without using Collections
-            2. WIth using collections
+            2. With using collections
             input: this is sample
             output: thample
          */
