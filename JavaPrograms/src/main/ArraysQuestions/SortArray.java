@@ -1,8 +1,6 @@
 package ArraysQuestions;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class SortArray {
@@ -12,6 +10,14 @@ public class SortArray {
         sortFunctionMethod(numbers);
         System.out.println();
         collectionMethod(numbers);
+        System.out.println();
+        sortInReverseOrder(numbers);
+    }
+
+    private static void sortInReverseOrder(int[] numbers) {
+        List<Integer>numList = Arrays.stream(numbers).boxed().collect(Collectors.toList());
+        Collections.sort(numList,Collections.reverseOrder());
+        System.out.println(numList);
     }
 
     public static void sortFunctionMethod(int []numbers){
