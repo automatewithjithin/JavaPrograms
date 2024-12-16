@@ -17,6 +17,7 @@ public class FirstNonRepeatingCharacter {
             }
         }
         //Find out non repeating character
+
         for(char c : hmap.keySet()){
             if (hmap.get(c)==1){
                 System.out.println("The first non repeating character is "+c);
