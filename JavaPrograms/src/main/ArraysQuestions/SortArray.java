@@ -14,7 +14,6 @@ public class SortArray {
         sortUsingStreams(numbers);
         System.out.println();
         sortInReverseOrder(numbers);
-
         sortInReverseOrderUsingComparator(numbers);
     }
 
