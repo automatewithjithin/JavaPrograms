@@ -11,12 +11,31 @@ public class SortArray {
         System.out.println();
         collectionMethod(numbers);
         System.out.println();
+        sortUsingStreams(numbers);
+        System.out.println();
         sortInReverseOrder(numbers);
+
+        sortInReverseOrderUsingComparator(numbers);
+    }
+
+    private static void sortInReverseOrderUsingComparator(int[] numbers) {
+        List<Integer>numList = Arrays.stream(numbers).boxed().collect(Collectors.toList());
+        Collections.sort(numList,Comparator.reverseOrder());
+        System.out.println(numList);
+    }
+
+    private static void sortUsingStreams(int[] numbers) {
+        int[]sortedNumbers = Arrays.stream(numbers).sorted().toArray();
+
+        for(int number : sortedNumbers){
+            System.out.print(number+" ");
+        }
     }
 
     private static void sortInReverseOrder(int[] numbers) {
         List<Integer>numList = Arrays.stream(numbers).boxed().collect(Collectors.toList());
         Collections.sort(numList,Collections.reverseOrder());
+
         System.out.println(numList);
     }
 
