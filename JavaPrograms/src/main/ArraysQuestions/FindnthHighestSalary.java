@@ -16,5 +16,6 @@ public class FindnthHighestSalary {
                .sorted(Comparator.reverseOrder())
                .skip(n-1).findFirst();
         System.out.println(ntthHighestSalary.get());
+
     }
 }
