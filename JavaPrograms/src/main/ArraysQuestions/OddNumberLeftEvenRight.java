@@ -7,7 +7,7 @@ import java.util.List;
 public class OddNumberLeftEvenRight {
     public static void main(String[] args) {
         int[]numbers = new int[] {1,2,3,4,5,6,7,8,9};
-        //shift even numbers to left and odd numbers to right
+        //shift even numbers to right and odd numbers to left
         List<Integer> odd = new ArrayList<Integer>();
         List<Integer> even = new ArrayList<Integer>();
         Arrays.stream(numbers).forEach(num->{
